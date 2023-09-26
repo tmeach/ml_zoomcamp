@@ -17,3 +17,13 @@
 - 2.16 Car price prediction project summary
 - 2.17 Explore more
 - 2.18 Homework
+
+### During the course we completed 2 projects:
+
+- car_price_prediction_project notebook
+  
+        Predicting car price based on car's characteristics using Linear Regression model.
+
+- predicting_house_prices notebook
+
+        We're working with California Housing Prices Kaggle competition and predicting house prices using Linear Regression model. 
