@@ -14,3 +14,12 @@
 - 3.13 Summary
 - 3.14 Explore more
 - 3.15 Homework
+
+
+### We've completed 2 projects this week:
+
+-**churn_prediction_project.ipynb**
+We've been working on Telco Customer Churn Kaggle project. We used Logistic Regression to predict whatever our customers will leave our company or not.
+
+-**binary_classification_homework.ipynb**
+We use car's price dataset from Week2 for binary Classification task: based on car's features we've predicted whatever car's price will be above mean price(1) or below (o)
