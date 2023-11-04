@@ -18,14 +18,14 @@ app = Flask('hear_disease_pred')
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    client = request.get_json()
-     
-    X = dv.transform([client])
-    dval = xgb.DMatrix(X,feature_names=dv.get_feature_names_out())
-
-    y_pred = model.predict(dval)
+    customer = request.get_json()
+    
+    X_test = dv.transform(customer)
+    features = list(dv.get_feature_names_out())
+    dtest = xgb.DMatrix(X_test, feature_names=features)
+   
+    y_pred = model.predict(dtest)
     disease = y_pred >= 0.5
-        
     
     result = {
         'disease_probability': float(y_pred),
