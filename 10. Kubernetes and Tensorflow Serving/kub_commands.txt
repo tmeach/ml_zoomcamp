@@ -1,0 +1,32 @@
+kubectl cluster-info --context kind-kind # 
+
+# create kind cluster
+kind create cluster --image kindest/node:v1.23.0 
+
+# list of the services which are runnin in our kubernetes claster
+kubectl get service / kubectl get svc
+
+# list of pod 
+kubectl get pod
+
+
+# list of deployments
+kubectl get deployment
+
+# deploy to kubernetes 
+kubectl apply -f deployment.yaml
+
+# describe pod or deployment
+kubectl describe pod <NAME_OF_YOUR_POD>
+
+# loading an image into a cluster in order to give our cluster information aboud our image
+kind load docker-image <NAME_OF_YOUR_IMAGE>
+
+
+# port-forwarding - connect port on a local machine to kubernetes cluster 
+kubectl port-forward <NAME_OF_YOUR_DEPLOYMENT>
+
+# info about kernel 
+htop
+
+
